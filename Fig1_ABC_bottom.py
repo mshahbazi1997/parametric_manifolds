@@ -459,12 +459,12 @@ for itR, tR in enumerate(trials): #10 #4
     net_low_all.load_state_dict(torch.load("TrainedNets/MWG_rank"+str(rank)+"_rep_"+str(tR)+"_2int_trainall_June.pt", map_location='cpu'))
     fig, ax, t0s_lr = plot_output_MWG(net_low_all, tss2, dt, t0s=True,only_perf=True)
     #plt.savefig('Plots/MWG2_predesigned_trainedInpsAll_'+str(tR)+'_figure_June.pdf')  
-    plt.show()
+    # plt.show()
     
     net_low_fr.load_state_dict(torch.load("TrainedNets/MWG_rank"+str(rank)+"_rep_"+str(tR)+"_fr.pt", map_location='cpu'))
     fig, ax, t0s_fr = plot_output_MWG(net_low_fr, tss2, dt, fr=True, t0s=True, only_perf=True)
     #plt.savefig('Plots/MWG2_predesigned_trainedFullR_'+str(tR)+'_figure_June.pdf')  
-    plt.show()
+    # plt.show()
     #%
     fig, ax = fs.plot_output_MWG2(net_low_all, net_low_fr, tss2, dt, cls, time, rank=3, give_trajs=False, plot=True,
                     fr = False, t0s=False, gener=False, tss_ref= 0, dela = 150)
@@ -597,7 +597,7 @@ for itR, tR in enumerate(trials): #10 #4
     
     fig, ax, t0s_lr2 = plot_output_MWG(net_low_all_lessnoise, tss3, dt, t0s=True, gener=True, tss_ref = tss2, dela=100)
     #plt.savefig('Plots/MWG2_predesigned_trainedInpsAll_'+str(tR)+'_gener_June.pdf')  
-    plt.show()
+    # plt.show()
     T0s_lr2.append(t0s_lr2)
 
     
@@ -605,7 +605,7 @@ for itR, tR in enumerate(trials): #10 #4
     print('generalization full-rank')
     fig, ax, t0s_fr2 = plot_output_MWG(net_low_fr, tss3, dt, fr=True, t0s=True, gener=True, tss_ref = tss2, dela=100)
     #plt.savefig('Plots/MWG2_predesigned_trainedFullR_'+str(tR)+'_gener_June.pdf')  
-    plt.show()
+    # plt.show()
     T0s_fr2.append(t0s_fr2)
 
 
@@ -633,7 +633,7 @@ for itR, tR in enumerate(trials): #10 #4
     
     plt.legend()
     #plt.savefig('Plots/MWG2_performance_lrvsfr_tr'+str(tR)+'_gener_June.pdf')   
-    plt.show()
+    # plt.show()
     #%
     fig = plt.figure()
     ax = fig.add_subplot(111)
@@ -663,7 +663,7 @@ for itR, tR in enumerate(trials): #10 #4
         
     plt.legend(loc=2)
     #plt.savefig('Plots/FM_Fig1_H_June.pdf')   
-    plt.show()
+    # plt.show()
 
  
 
@@ -696,8 +696,7 @@ plt.xlim([-0.3, 1.3])
 
 ax.yaxis.set_ticks_position('left')
 ax.xaxis.set_ticks_position('bottom')
-plt.savefig('PR_MWG.pdf', transparent=True)
-plt.show()
+# plt.savefig('PR_MWG.pdf', transparent=True)
 
 #%%
 FF = 0.7
@@ -730,8 +729,8 @@ plt.ylim([1.35, 3.1])
 
 ax.yaxis.set_ticks_position('left')
 ax.xaxis.set_ticks_position('bottom')
-plt.savefig('PR_MWG_2.pdf', transparent=True)
-plt.show()
+# plt.savefig('PR_MWG_2.pdf', transparent=True)
+# plt.show()
                         
 #%%
 
@@ -792,7 +791,7 @@ plt.ylabel(r'$t_p$ (ms)')
 
 plt.legend()
 #plt.savefig('Performance_sev_MWG.pdf')
-plt.show()
+# plt.show()
 
 #%%
 
@@ -855,7 +854,7 @@ for itr, tr in enumerate(trials):
     
     #plt.legend()
     #plt.savefig('Performance_sev_MWG_net_lr_'+str(tr)+'.pdf')
-    plt.show()
+    # plt.show()
     
     #%
     fig = plt.figure()

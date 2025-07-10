@@ -471,7 +471,7 @@ ax.set_ylabel('$\kappa_2$')
 ax.set_zlabel('$\kappa_3$')
 ax.dist=6
 ax.axis('off')
-plt.savefig('Plots/MWG2_noInp_ManifoldTrajs_0.pdf')
+# plt.savefig('Plots/MWG2_noInp_ManifoldTrajs_0.pdf')
 
 
 
@@ -814,3 +814,4 @@ for xx in range(len(tss22_)):
 
 
 plt.savefig('Fig4_H.pdf')
+plt.show()

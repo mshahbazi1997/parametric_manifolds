@@ -355,7 +355,7 @@ for tr in [5,]:
             # string = 'FM_Fig1_C_June.pdf'
             # print(string)
             # plt.savefig(string)
-            plt.show()
+            # plt.show()
 
            
             #%%     Do only for production            
@@ -434,7 +434,7 @@ for tr in [5,]:
             plt.xticks([1, 2, 3, 4, 5, 6, 7,  ])
             plt.legend()
             #plt.savefig('Plots/FM_Fig1_B1_Aug.pdf')  
-            plt.show()
+            # plt.show()
            
 
             #%% Manifolds in 3D - with generalization
@@ -551,7 +551,7 @@ for tr in [5,]:
             ax.zaxis.pane.set_edgecolor('w')
             ax.dist= 9.5
             plt.savefig('Fig4_D_2.pdf')   
-            plt.show()            
+            # plt.show()            
 
             
             
@@ -618,7 +618,7 @@ for tr in [5,]:
             ax.yaxis.set_ticks_position('left')
             ax.xaxis.set_ticks_position('bottom')
             plt.savefig('Fig4_D1.pdf')   
-            plt.show()
+            # plt.show()
             
           
             
@@ -758,7 +758,7 @@ for tr in [5,]:
             plt.ylabel(r'speed on manifold')
             plt.ylim([-0.08, 0.35])
             plt.savefig('Fig4_E.pdf')   
-            plt.show()
+            # plt.show()
 
 
             
